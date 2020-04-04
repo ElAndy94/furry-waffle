@@ -1,0 +1,33 @@
+$primary: rgb(111, 0, 255);
+
+header {
+  background-color: $primary;
+  padding: 1em 0;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  a.log {
+    font-weight: bold;
+  }
+
+  nav {
+    float: right;
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      display: flex;
+
+      li a {
+        padding: 1em;
+
+        &:hover {
+          background: darken($primary, 10%);
+        }
+      }
+    }
+  }
+}
